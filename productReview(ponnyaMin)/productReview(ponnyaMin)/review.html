@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="./libriary/product.css">
+</head>
+<body>
+    <header>
+        <h1>User Reviews</h1>
+    </header>
+
+    <section class="review-section">
+        <div id="product-info"></div> <!-- This is where the product image, name, and price will be rendered -->
+        
+        <form id="review-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+            <label for="review">Your Review</label>
+            <textarea id="review" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    
+        <button onclick="goBack()">Back</button>
+    
+        <h3>Customer Reviews</h3>
+        <div id="customer-reviews"></div>
+    </section>
+    
+
+    <script src="review.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 ElizeFiguring. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</footer>
+
+</html>
